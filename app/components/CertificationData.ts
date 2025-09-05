@@ -9,11 +9,7 @@ export const certifications = [
     slug: "secnumacademie",
     description:
       "Certification SecNumacadémie : Todd Messie David BAHOUNA SAINT a suivi avec succès les quatre modules du MOOC SecNumacadémie, obtenant d’excellents scores aux évaluations. Cette formation atteste de ses compétences en cybersécurité, sensibilisation aux risques numériques et bonnes pratiques informatiques, renforçant son profil professionnel dans le domaine IT.",
-    // skills: [
-    //   "Configuration de routeurs",
-    //   "Analyse de trafic",
-    //   "Sécurité réseau",
-    // ],
+    skills: ["Sécurité réseau"],
     imageUrl: "/SecNumacadémie.png",
     credentialLink: "#", // plus utilisé mais requis pour compatibilité
     icon: ShieldCheckIcon,
