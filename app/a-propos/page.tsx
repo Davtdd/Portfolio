@@ -122,7 +122,7 @@ const AboutPage = () => {
             À <span className="text-cyan-400">propos</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Découvrez mon parcours, mes compétences et mes centres d'intérêt.
+            Découvrez mon parcours, mes compétences et mes centres d’intérêt.
           </p>
         </div>
 
@@ -138,8 +138,8 @@ const AboutPage = () => {
                 Applications Métiers), je développe une expertise technique
                 solide à la fois en développement logiciel et en administration
                 des réseaux. <br /> Mon parcours académique et mes expériences
-                pratiques m'ont permis de maîtriser la conception, le
-                développement d'applications ainsi que les fondamentaux de la
+                pratiques m’ont permis de maîtriser la conception, le
+                développement d’applications ainsi que les fondamentaux de la
                 sécurité informatique et de la gestion des infrastructures
                 réseau.
               </p>
@@ -170,7 +170,7 @@ const AboutPage = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <BriefcaseIcon className="h-5 w-5 text-cyan-400" />
-                  <span>En recherche d'alternance</span>
+                  <span>En recherche d’alternance</span>
                 </div>
               </div>
             </div>
@@ -218,7 +218,7 @@ const AboutPage = () => {
             </div>
 
             <div className="bg-gray-900/50 rounded-2xl p-6 border border-gray-800">
-              <h3 className="text-xl font-bold mb-6">Centres d'intérêt</h3>
+              <h3 className="text-xl font-bold mb-6">Centres d’intérêt</h3>
 
               <div className="grid grid-cols-2 gap-4">
                 {interests.map((interest, index) => (

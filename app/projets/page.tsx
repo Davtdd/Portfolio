@@ -80,7 +80,7 @@ const ProjectsPage = () => {
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Découvrez mes réalisations professionnelles et personnelles, ainsi
-            que les certifications que j'ai obtenues.
+            que les certifications que j’ai obtenues.
           </p>
         </div>
 

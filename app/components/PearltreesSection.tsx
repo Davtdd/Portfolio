@@ -8,12 +8,12 @@ const PearltreesSection = () => {
         <div className="md:w-1/2">
           <h2 className="text-2xl font-bold mb-4">Ma Méthode de Veille</h2>
           <p className="text-gray-300 mb-4">
-            J'utilise Pearltrees pour organiser ma veille technologique de façon
+            J’utilise Pearltrees pour organiser ma veille technologique de façon
             efficace et structurée.
           </p>
           <p className="text-gray-300 mb-6">
             Cette plateforme me permet de collecter, organiser et partager des
-            ressources pertinentes sur la cybersécurité dans l'industrie du jeu
+            ressources pertinentes sur la cybersécurité dans l’industrie du jeu
             vidéo.
           </p>
           <a

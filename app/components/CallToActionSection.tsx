@@ -16,8 +16,8 @@ const CallToActionSection = () => {
             Intéressé par mon <span className="text-cyan-400">profil</span> ?
           </h2>
           <p className="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">
-            N'hésitez pas à me contacter pour discuter de projets,
-            d'opportunités ou simplement échanger sur des sujets technologiques.
+            N’hésitez pas à me contacter pour discuter de projets,
+            d’opportunités ou simplement échanger sur des sujets technologiques.
           </p>
         </div>
 

@@ -1,5 +1,5 @@
 // src/app/layout.tsx
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/app/components/Footer";
@@ -95,13 +95,13 @@ export const metadata = {
   ],
   authors: [{ name: "Todd Bahouna Saint" }],
   creator: "Todd Bahouna Saint",
-  metadataBase: new URL("https://todd-Bahouna-portfolio.vercel.app"),
+  metadataBase: new URL("https://todd-bahounasaint-portfolio.vercel.app"),
   openGraph: {
     title:
       "Todd Bahouna Saint | Portfolio Développeur & réseau et des systèmes",
     description:
       "Portfolio de Todd Bahouna Saint – Développeur web et réseau et des systèmes.",
-    url: "https://todd-Bahouna-portfolio.vercel.app",
+    url: "https://todd-bahounasaint-portfolio.vercel.app",
     siteName: "Todd Bahouna Saint Portfolio",
     images: [
       {

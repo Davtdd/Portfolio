@@ -24,8 +24,8 @@ const ContactPage = () => {
             Me <span className="text-cyan-400">contacter</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Vous avez une question, une proposition ou souhaitez discuter d'un
-            projet ? N'hésitez pas à me contacter.
+            Vous avez une question, une proposition ou souhaitez discuter d’un
+            projet ? N’hésitez pas à me contacter.
           </p>
         </div>
 
@@ -89,7 +89,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-bold">Disponibilité</h3>
-                    <p className="text-gray-300">En recherche d'alternance</p>
+                    <p className="text-gray-300">En recherche d’alternance</p>
                     <p className="text-gray-400 mt-1">
                       Ouvert à toute opportunité dès maintenant
                     </p>
@@ -166,7 +166,7 @@ const ContactPage = () => {
 
               <p className="mt-4 text-gray-400">
                 Basé à Sainte-Geneviève-des-Bois, je suis ouvert aux
-                opportunités en Île-de-France ainsi qu'aux collaborations en
+                opportunités en Île-de-France ainsi qu’aux collaborations en
                 télétravail.
               </p>
             </div>
@@ -198,7 +198,7 @@ const ContactPage = () => {
                     Quel est votre délai de réponse ?
                   </h3>
                   <p className="text-gray-400">
-                    Je m'efforce de répondre à tous les messages dans un délai
+                    Je m’efforce de répondre à tous les messages dans un délai
                     de 24 à 48 heures. Pour les demandes urgentes, veuillez
                     utiliser le numéro de téléphone fourni.
                   </p>
@@ -210,15 +210,15 @@ const ContactPage = () => {
                   </h3>
                   <p className="text-gray-400">
                     Actuellement, je suis principalement concentré sur mes
-                    études et la recherche d'une alternance. Cependant, je suis
+                    études et la recherche d’une alternance. Cependant, je suis
                     ouvert à discuter de petits projets qui pourraient
-                    s'inscrire dans mon emploi du temps.
+                    s’inscrire dans mon emploi du temps.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="text-lg font-bold mb-2">
-                    Quel type d'opportunités recherchez-vous ?
+                    Quel type d’opportunités recherchez-vous ?
                   </h3>
                   <p className="text-gray-400">
                     Je suis ouvert à toutes les opportunités dans le domaine

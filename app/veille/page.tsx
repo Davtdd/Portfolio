@@ -32,10 +32,10 @@ export default function VeillePage() {
 
           <div className="prose prose-invert max-w-none">
             <p>
-              L'industrie du jeu vidéo représente aujourd'hui un marché de plus
+              L’industrie du jeu vidéo représente aujourd’hui un marché de plus
               de 200 milliards de dollars, dépassant les industries du cinéma et
               de la musique combinées. Cette croissance exponentielle
-              s'accompagne de nouveaux défis en matière de sécurité.
+              s’accompagne de nouveaux défis en matière de sécurité.
             </p>
 
             <h3>Enjeux principaux</h3>
@@ -50,7 +50,7 @@ export default function VeillePage() {
               </li>
               <li>
                 <strong>Lutte contre la triche</strong> : outils anti-cheat et
-                préservation de l'équité compétitive
+                préservation de l’équité compétitive
               </li>
               <li>
                 <strong>Sécurité des infrastructures</strong> : protection
@@ -71,14 +71,14 @@ export default function VeillePage() {
               <li>Kernels anti-cheat (Easy Anti-Cheat, BattlEye)</li>
               <li>Analyse comportementale des joueurs</li>
               <li>Chiffrement de bout en bout pour les communications</li>
-              <li>Systèmes de détection d'intrusion spécifiques</li>
+              <li>Systèmes de détection d’intrusion spécifiques</li>
             </ul>
 
-            <h3>Perspectives d'avenir</h3>
-            <p>L'avenir de la cybersécurité dans le jeu vidéo passera par :</p>
+            <h3>Perspectives d’avenir</h3>
+            <p>L’avenir de la cybersécurité dans le jeu vidéo passera par :</p>
             <ul>
               <li>
-                L'intégration de l'IA pour détecter les comportements anormaux
+                L’intégration de l’IA pour détecter les comportements anormaux
               </li>
               <li>
                 Le développement de blockchain pour sécuriser les actifs
@@ -89,7 +89,7 @@ export default function VeillePage() {
                 sécurité
               </li>
               <li>
-                La mise en place de standards de sécurité pour l'industrie
+                La mise en place de standards de sécurité pour l’industrie
               </li>
             </ul>
           </div>
