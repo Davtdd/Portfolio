@@ -12,12 +12,13 @@ interface Project {
   slug: string;
 }
 
-// Typage correct pour Next.js App Router
+// CORRECTION : Ajout de searchParams pour correspondre au type Next.js
 interface ProjectPageProps {
   params: {
     type: string;
     slug: string;
   };
+  searchParams: { [key: string]: string | string[] | undefined };
 }
 
 // Données projets (inchangées)
@@ -89,7 +90,6 @@ export async function generateStaticParams() {
   ];
 }
 
-// ✅ Export unique pour la page
 export default function ProjectPage({ params }: ProjectPageProps) {
   const { type, slug } = params;
 
