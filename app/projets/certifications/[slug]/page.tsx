@@ -7,13 +7,15 @@ import Image from "next/image";
 
 interface Props {
   params: Promise<{ slug: string }>;
-  searchParams: { [key: string]: string | string[] | undefined };
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export const generateMetadata = async ({
   params,
+  searchParams,
 }: Props): Promise<Metadata> => {
   const { slug } = await params;
+  await searchParams; // Résolution nécessaire même si non utilisée
   const cert = certifications.find((c) => c.slug === slug);
 
   return {
@@ -22,12 +24,12 @@ export const generateMetadata = async ({
   };
 };
 
-const CertificationPage = async ({ params }: Props) => {
+const CertificationPage = async ({ params, searchParams }: Props) => {
   const { slug } = await params;
+  await searchParams; // Résolution nécessaire
   const cert = certifications.find((c) => c.slug === slug);
 
   if (!cert) return notFound();
-  // const Icon = cert.icon;
   return (
     <div className="pt-20 pb-20 max-w-3xl mx-auto px-4">
       <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800">
