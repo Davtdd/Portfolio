@@ -18,7 +18,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Portfolio</h3>
             <p className="text-gray-400 mb-6">
-              Portfolio professionnel d'un étudiant en BTS SIO option SLAM,
+              Portfolio professionnel d’un étudiant en BTS SIO option SLAM,
               passionné par le développement et la cybersécurité.
             </p>
             <div className="flex space-x-4">
