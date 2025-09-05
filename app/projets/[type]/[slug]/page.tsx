@@ -1,4 +1,4 @@
-// src/app/projets/[type]/[slug]/page.tsx
+// src/app/projets/[type]/[slug]/page.ts
 import { notFound } from "next/navigation";
 import Image from "next/image";
 
