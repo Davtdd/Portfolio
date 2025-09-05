@@ -12,18 +12,15 @@ interface Project {
   slug: string;
 }
 
-interface ProjectPageParams {
-  type: string;
-  slug: string;
+// Typage correct pour Next.js App Router
+interface ProjectPageProps {
+  params: {
+    type: string;
+    slug: string;
+  };
 }
 
-export default function ProjectPage({ params }: { params: ProjectPageParams }) {
-  const { type, slug } = params;
-
-  if (!slug) return notFound();
-}
-
-// Données projets (extraits de ta page projets)
+// Données projets (inchangées)
 const professionalProjects: Project[] = [
   {
     title: "Application de Gestion de facture",
@@ -69,7 +66,6 @@ const personalProjects: Project[] = [
     isProfessional: false,
     slug: "qcm",
   },
-
   {
     title: "Portfolio Personnel",
     description:
@@ -82,33 +78,26 @@ const personalProjects: Project[] = [
   },
 ];
 
+// Pré-génération des chemins statiques
 export async function generateStaticParams() {
-  // Permet à Next.js de pré-générer les pages statiques
-  const params = [
+  return [
     ...professionalProjects.map((p) => ({
       type: "professionnel",
       slug: p.slug,
     })),
-    ...personalProjects.map((p) => ({
-      type: "personnel",
-      slug: p.slug,
-    })),
+    ...personalProjects.map((p) => ({ type: "personnel", slug: p.slug })),
   ];
-
-  return params;
 }
 
-export default function ProjectDetailPage({ params }: ProjectPageParams) {
+// ✅ Export unique pour la page
+export default function ProjectPage({ params }: ProjectPageProps) {
   const { type, slug } = params;
 
-  // Recherche du projet selon type et slug
   const projects =
     type === "professionnel" ? professionalProjects : personalProjects;
-
   const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
-    // Si pas trouvé, affiche une 404
     notFound();
   }
 
@@ -126,7 +115,9 @@ export default function ProjectDetailPage({ params }: ProjectPageParams) {
         />
       </div>
 
-      <p className="text-gray-300 mb-6">{project.description}</p>
+      <p className="text-gray-300 mb-6 whitespace-pre-line">
+        {project.description}
+      </p>
 
       <div className="mb-6">
         <h2 className="text-2xl font-semibold mb-2">Technologies utilisées</h2>
