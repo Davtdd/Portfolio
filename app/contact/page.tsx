@@ -221,11 +221,12 @@ const ContactPage = () => {
                     Quel type d'opportunités recherchez-vous ?
                   </h3>
                   <p className="text-gray-400">
-                    Je recherche principalement une alternance en développement
-                    logiciel ou en cybersécurité, avec une orientation vers les
-                    métiers de SOC analyst. Je suis particulièrement intéressé
-                    par les entreprises innovantes dans le domaine de la
-                    sécurité informatique.
+                    Je suis ouvert à toutes les opportunités dans le domaine
+                    informatique, que ce soit le développement web, les métiers
+                    du réseau et des systèmes, ou la cybersécurité. Je reste
+                    curieux et intéressé par tous les secteurs innovants de
+                    l’informatique et je ne ferme aucune porte à aucun domaine
+                    technologique.
                   </p>
                 </div>
               </div>

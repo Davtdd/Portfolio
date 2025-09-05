@@ -19,43 +19,55 @@ export const metadata: Metadata = {
 const ProjectsPage = () => {
   const professionalProjects = [
     {
-      title: "Application de Gestion pour Entreprise",
+      title: "Application de Gestion de facture",
       description:
-        "Développement d'une application web de gestion de stocks et de commandes pour une PME locale.",
-      technologies: ["React", "Node.js", "MongoDB"],
+        "Application de gestion des factures avec Next.js & PostgreSQL. Elle permet la gestion des utilisateurs et de leurs factures, avec un tableau récapitulatif dynamique et intuitif.",
+      technologies: ["React", "Node.js", "PostgreSQL"],
       imageUrl: "/dashboard.png",
       link: "/projets/professionnel/app-gestion",
       isProfessional: true,
     },
     {
-      title: "Site E-commerce",
+      title:
+        "Développement d'une plateforme web d’agrégation d’informations (formations, stages, salons d’emploi, événements)",
       description:
-        "Création d'une plateforme e-commerce avec système de paiement sécurisé et gestion de catalogue.",
+        "Développement d'une plateforme web d’agrégation d’informations (formations, stages, salons d’emploi, événements) avec Next.js, TypeScript, TailwindCSS, Python, PrismaORM et PostgreSQL. Le projet permet la centralisation, la recherche et le filtrage des opportunités, avec un système de notifications et une architecture scalable.",
       technologies: ["Next.js", "Stripe", "PostgreSQL"],
-      imageUrl: "/pro/project2.jpg",
-      link: "/projets/professionnel/ecommerce",
+      imageUrl: "/agregation.png",
+      link: "/projets/professionnel/agregation",
       isProfessional: true,
     },
   ];
 
   const personalProjects = [
     {
-      title: "Application Mobile de Fitness",
+      title: "Développement d’une application web de petites annonces",
       description:
-        "Conception et développement d'une application mobile pour le suivi d'entraînements sportifs.",
-      technologies: ["React Native", "Firebase"],
-      imageUrl: "/perso/project1.jpg",
-      link: "/projets/personnel/fitness-app",
+        "Développement d’une application web de petites annonces inspirée de Leboncoin avec PHP, SQL, HTML/CSS et JavaScript. L’outil permet l’inscription et la connexion sécurisées des utilisateurs, la gestion complète des annonces (création, modification, suppression, favoris), la consultation et le filtrage des annonces, ainsi que la messagerie entre utilisateurs.",
+      technologies: ["HTML/CSS", "JavaScript", "PHP", "MySQL"],
+      imageUrl: "/leboncoin.png",
+      link: "/projets/personnel/annonces-app",
       isProfessional: false,
     },
     {
-      title: "Jeu Vidéo en Python",
+      title: "Développement d’une application web de QCM",
       description:
-        "Développement d'un jeu vidéo 2D en utilisant Pygame avec des mécaniques originales.",
-      technologies: ["Python", "Pygame"],
-      imageUrl: "/perso/project2.jpg",
-      link: "/projets/personnel/pygame",
+        "Développement d’une application web de QCM avec PHP et MySQL. Le système permet aux utilisateurs de s’inscrire, de se connecter, de répondre à des questions aléatoires, d’obtenir une note automatique et inclut un journal des activités pour le suivi des connexions et déconnexions.",
+      technologies: ["HTML/CSS", "JavaScript", "PHP", "MySQL"],
+      imageUrl: "/qcm.png",
+      link: "/projets/personnel/qcm",
       isProfessional: false,
+    },
+
+    {
+      title: "Portfolio Personnel",
+      description:
+        "Portfolio de Todd Bahouna Saint développé avec Next.js et TailwindCSS. Intègre la gestion de veille technologique avec Peraltrees, un formulaire de contact fonctionnel via EmailJS et un système de ReCAPTCHA pour la sécurité.",
+      technologies: ["Next.js", "Tailwind CSS"],
+      imageUrl: "/portfolio.png",
+      link: "/projets/personnel/portfolio",
+      isProfessional: false,
+      slug: "portfolio",
     },
   ];
 

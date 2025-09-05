@@ -22,47 +22,59 @@ interface PageProps {
 // Données projets (extraits de ta page projets)
 const professionalProjects: Project[] = [
   {
-    title: "Application de Gestion pour Entreprise",
+    title: "Application de Gestion de facture",
     description:
-      "Développement d'une application web de gestion de stocks et de commandes pour une PME locale.",
-    technologies: ["React", "Node.js", "MongoDB"],
+      "Gestion des factures (Next.js + PostgreSQL)\n\nDescription approfondie :\nCe projet est une application web full-stack développée avec Next.js et une base de données PostgreSQL, conçue pour la gestion complète des factures et des utilisateurs. L’objectif était de créer un outil permettant aux entreprises de suivre facilement leurs transactions et aux utilisateurs de gérer leurs factures de manière intuitive.\n\nFonctionnalités principales :\n- Création, modification et suppression de factures.\n- Association des factures à des utilisateurs spécifiques.\n- Tableau récapitulatif dynamique regroupant toutes les données des factures (montants, statuts, dates, clients).\n- Interface utilisateur ergonomique pour un suivi simplifié et rapide.\n- Gestion des erreurs et validation des entrées pour garantir l’intégrité des données.\n\nCompétences démontrées :\n- Développement full-stack avec Next.js.\n- Modélisation et gestion d’une base de données relationnelle PostgreSQL.\n- Création d’interfaces utilisateur interactives et tableaux de bord dynamiques.\n- Structuration et organisation d’un projet complet avec attention à l’expérience utilisateur.",
+    technologies: ["Next.js", "PostgreSQL"],
     imageUrl: "/dashboard.png",
-    link: "/projets/professionnel/app-gestion",
+    link: "https://github.com/Davtdd/Dashboard-App.git",
     isProfessional: true,
     slug: "app-gestion",
   },
   {
-    title: "Site E-commerce",
+    title:
+      "Développement d'une plateforme web d’agrégation d’informations (formations, stages, salons d’emploi, événements)",
     description:
-      "Création d'une plateforme e-commerce avec système de paiement sécurisé et gestion de catalogue.",
-    technologies: ["Next.js", "Stripe", "PostgreSQL"],
-    imageUrl: "/pro/project2.jpg",
-    link: "/projets/professionnel/ecommerce",
+      "Plateforme d’agrégation d’informations (Next.js, TypeScript, Tailwind CSS, Python, PrismaORM, PostgreSQL)\n\nDescription approfondie :\nCette plateforme web vise à centraliser et rendre accessibles les informations sur les formations, stages, alternances, salons d’emploi, spectacles et événements en France. Le projet a été développé avec un stack moderne : Next.js, TypeScript, Tailwind CSS, backend en Python, ORM Prisma et base de données PostgreSQL.\n\nFonctionnalités principales :\n- Conception d’un modèle de données efficace pour stocker différents types d’informations.\n- Développement full-stack avec intégration de scraping de données et d’APIs.\n- Recherche et filtrage des informations pour une consultation rapide.\n- Système de notifications pour les événements à venir.\n- Intégration des réseaux sociaux et mise à jour en temps réel des données.\n- Tests unitaires et déploiement automatisé pour garantir performance et scalabilité.\n\nCompétences démontrées :\n- Développement full-stack moderne avec Next.js et Python.\n- Conception et gestion de bases de données relationnelles complexes.\n- Intégration d’APIs et automatisation de la collecte de données.\n- Création d’interfaces réactives et optimisées pour une bonne UX.",
+    technologies: ["Next.js", "PostgreSQL"],
+    imageUrl: "/agregation.png",
+    link: "https://github.com/FYGS/plateforme-web-aggregation.git",
     isProfessional: true,
-    slug: "ecommerce",
+    slug: "agregation",
   },
 ];
 
 const personalProjects: Project[] = [
   {
-    title: "Application Mobile de Fitness",
+    title: "Développement d’une application web de petites annonces",
     description:
-      "Conception et développement d'une application mobile pour le suivi d'entraînements sportifs.",
-    technologies: ["React Native", "Firebase"],
-    imageUrl: "/perso/project1.jpg",
-    link: "/projets/personnel/fitness-app",
+      "Application de petites annonces type Leboncoin (PHP + SQL + HTML/CSS + JS)\n\nDescription approfondie :\nCe projet est une application web de petites annonces permettant aux utilisateurs de créer, consulter et gérer des annonces. Développée en PHP, avec une base SQL, et un frontend en HTML/CSS (JavaScript pour améliorer l’expérience), l’application vise à reproduire les fonctionnalités principales d’un site comme Leboncoin.\n\nFonctionnalités principales :\n- Inscription et connexion sécurisées des utilisateurs avec chiffrement des mots de passe.\n- Création, modification et suppression d’annonces avec gestion des photos et informations complémentaires.\n- Consultation et filtrage des annonces selon plusieurs critères (prix, catégorie, etc.).\n- Ajout d’annonces aux favoris et suivi depuis le compte utilisateur.\n- Messagerie interne pour communiquer autour des annonces.\n\nCompétences démontrées :\n- Développement backend en PHP et gestion sécurisée des données utilisateurs.\n- Création d’interfaces utilisateurs interactives et réactives.\n- Gestion complète d’un workflow utilisateur pour un site de petites annonces.\n- Implémentation de fonctionnalités avancées comme favoris, filtres et messagerie.",
+    technologies: ["HTML/CSS", "JavaScript", "PHP", "MySQL"],
+    imageUrl: "/leboncoin.png",
+    link: "https://github.com/Davtdd/Application-Web-de-Petites-Annonces.git",
     isProfessional: false,
-    slug: "fitness-app",
+    slug: "annonces-app",
   },
   {
-    title: "Jeu Vidéo en Python",
+    title: "Développement d’une application web de QCM",
     description:
-      "Développement d'un jeu vidéo 2D en utilisant Pygame avec des mécaniques originales.",
-    technologies: ["Python", "Pygame"],
-    imageUrl: "/perso/project2.jpg",
-    link: "/projets/personnel/pygame",
+      "Application de QCM (PHP + MySQL)\n\nDescription approfondie :\nCe projet est une application web de questionnaires à choix multiples (QCM) destinée à tester les connaissances des utilisateurs. Développée en PHP avec une base de données MySQL, l’application inclut un suivi des activités des utilisateurs ainsi qu’un système de notation automatique.\n\nFonctionnalités principales :\n- Inscription et connexion sécurisées des utilisateurs.\n- Génération aléatoire de questions pour chaque session.\n- Calcul automatique des scores basés sur les réponses données.\n- Journal des activités pour suivre les connexions et déconnexions.\n- Interface simple et intuitive pour répondre facilement aux QCM.\n\nCompétences démontrées :\n- Développement backend en PHP et gestion de base MySQL.\n- Implémentation d’un système de scoring et suivi utilisateur.\n- Création d’une interface web interactive et conviviale.\n- Organisation d’un projet complet avec fonctionnalités front-end et back-end.",
+    technologies: ["HTML/CSS", "JavaScript", "PHP", "MySQL"],
+    imageUrl: "/qcm.png",
+    link: "https://github.com/Davtdd/Projet-Qcm.git",
     isProfessional: false,
-    slug: "pygame",
+    slug: "qcm",
+  },
+
+  {
+    title: "Portfolio Personnel",
+    description:
+      "Portfolio de Todd Bahouna Saint réalisé avec Next.js et TailwindCSS, conçu pour présenter mes projets, compétences et réalisations professionnelles. Le site inclut une gestion de veille technologique via Peraltrees pour centraliser et suivre mes apprentissages et actualités techniques. Un formulaire de contact fonctionnel, sécurisé par EmailJS et ReCAPTCHA, permet aux visiteurs de me contacter facilement. L’interface est entièrement responsive et optimisée pour une navigation fluide sur tous les appareils, illustrant mes compétences en développement front-end moderne et expérience utilisateur.",
+    technologies: ["Next.js", "Tailwind CSS"],
+    imageUrl: "/portfolio.png",
+    link: "https://github.com/Davtdd/Portfolio.git",
+    isProfessional: false,
+    slug: "portfolio",
   },
 ];
 
@@ -129,6 +141,8 @@ export default function ProjectDetailPage({ params }: PageProps) {
       <a
         href={project.link}
         className="inline-block mt-4 px-6 py-3 bg-cyan-600 rounded hover:bg-cyan-700 transition text-white font-semibold"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         Voir le projet complet
       </a>

@@ -117,7 +117,7 @@ const Footer = () => {
           <p>
             © {currentYear} Todd BAHOUNA SAINT — Étudiant BTS SIO SLAM —
             Passionné par les systèmes, le développement et la cybersécurité
-            (oui, c’est un peu beaucoup, je sais). Tous droits réservés.
+            (oui, c’est un peu beaucoup, je sais😁). Tous droits réservés.
           </p>
           <p className="mt-2">Conçu avec Next.js, Tailwind CSS et passion.</p>
         </div>

@@ -56,7 +56,7 @@ const AboutPage = () => {
       title: "Stage Développeur Web",
       institution: "A'Numerique",
       description: `
-    - Développement d’un dashboard interactif performant avec Next.js et PostgreSQL (Neon), déployé sur Vercel.
+    - Développement d’un application de Gestion de facture(Next.js + PostgreSQL), déployé sur Vercel.
     
     - Conception et réalisation d’une Plateforme Web d’Agrégation d’Informations (alternances, stages, formations, salons d'emploi, spectacles, événements) destinée à faciliter l’accès à l’information pour les étudiants, chercheurs d’emploi et alternants.
     
