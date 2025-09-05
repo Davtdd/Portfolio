@@ -12,11 +12,15 @@ interface Project {
   slug: string;
 }
 
-interface ProjectPageProps {
-  params: {
-    type: string; // "professionnel" ou "personnel"
-    slug: string; // "app-gestion", "pygame", etc.
-  };
+interface ProjectPageParams {
+  type: string;
+  slug: string;
+}
+
+export default function ProjectPage({ params }: { params: ProjectPageParams }) {
+  const { type, slug } = params;
+
+  if (!slug) return notFound();
 }
 
 // Données projets (extraits de ta page projets)
@@ -94,7 +98,7 @@ export async function generateStaticParams() {
   return params;
 }
 
-export default function ProjectDetailPage({ params }: ProjectPageProps) {
+export default function ProjectDetailPage({ params }: ProjectPageParams) {
   const { type, slug } = params;
 
   // Recherche du projet selon type et slug
