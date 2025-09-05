@@ -6,12 +6,15 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
   searchParams: { [key: string]: string | string[] | undefined };
 }
 
-export const generateMetadata = ({ params }: Props): Metadata => {
-  const cert = certifications.find((c) => c.slug === params.slug);
+export const generateMetadata = async ({
+  params,
+}: Props): Promise<Metadata> => {
+  const { slug } = await params;
+  const cert = certifications.find((c) => c.slug === slug);
 
   return {
     title: cert ? `${cert.title} | Certification` : "Certification introuvable",
@@ -19,19 +22,18 @@ export const generateMetadata = ({ params }: Props): Metadata => {
   };
 };
 
-const CertificationPage = ({ params }: Props) => {
-  const cert = certifications.find((c) => c.slug === params.slug);
+const CertificationPage = async ({ params }: Props) => {
+  const { slug } = await params;
+  const cert = certifications.find((c) => c.slug === slug);
 
   if (!cert) return notFound();
-
-  const Icon = cert.icon;
-
+  // const Icon = cert.icon;
   return (
     <div className="pt-20 pb-20 max-w-3xl mx-auto px-4">
       <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800">
         <div className="flex items-center gap-4 mb-6">
           <div className="p-3 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-lg">
-            <Icon className="h-6 w-6 text-white" />
+            <div className="h-6 w-6 text-white" />
           </div>
           <div>
             <h1 className="text-2xl font-bold">{cert.title}</h1>

@@ -14,10 +14,7 @@ interface Project {
 
 // CORRECTION : Ajout de searchParams pour correspondre au type Next.js
 interface ProjectPageProps {
-  params: {
-    type: string;
-    slug: string;
-  };
+  params: Promise<{ type: string; slug: string }>;
   searchParams: { [key: string]: string | string[] | undefined };
 }
 
@@ -90,8 +87,9 @@ export async function generateStaticParams() {
   ];
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const { type, slug } = params;
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  // ✅ On résout la Promise avec await
+  const { type, slug } = await params;
 
   const projects =
     type === "professionnel" ? professionalProjects : personalProjects;
