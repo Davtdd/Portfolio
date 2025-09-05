@@ -89,6 +89,7 @@ export async function generateStaticParams() {
 
 export default async function ProjectPage({
   params,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   searchParams,
 }: ProjectPageProps) {
   const { type, slug } = await params;
