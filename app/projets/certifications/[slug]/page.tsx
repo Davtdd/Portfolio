@@ -7,6 +7,7 @@ import Image from "next/image";
 
 interface Props {
   params: { slug: string };
+  searchParams: { [key: string]: string | string[] | undefined };
 }
 
 export const generateMetadata = ({ params }: Props): Metadata => {
