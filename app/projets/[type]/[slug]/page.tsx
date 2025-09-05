@@ -92,7 +92,7 @@ export default async function ProjectPage({
   searchParams,
 }: ProjectPageProps) {
   const { type, slug } = await params;
-  const resolvedSearchParams = await searchParams; // Résolution nécessaire
+  // const resolvedSearchParams = await searchParams; // Résolution nécessaire
 
   const projects =
     type === "professionnel" ? professionalProjects : personalProjects;
