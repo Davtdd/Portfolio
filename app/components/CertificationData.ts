@@ -8,26 +8,35 @@ export const certifications = [
     date: "Septembre 2025",
     slug: "secnumacademie",
     description:
-      "Certification SecNumacadémie : Todd Messie David BAHOUNA SAINT a suivi avec succès les quatre modules du MOOC SecNumacadémie, obtenant d’excellents scores aux évaluations. Cette formation atteste de ses compétences en cybersécurité, sensibilisation aux risques numériques et bonnes pratiques informatiques, renforçant son profil professionnel dans le domaine IT.",
-    skills: ["Sécurité réseau"],
+      "Certification obtenue via SecNumacadémie, la plateforme officielle de formation en cybersécurité de l’ANSSI (Agence nationale de la sécurité des systèmes d’information).\n\n\n Cette certification atteste de ma capacité à adopter et appliquer les bonnes pratiques de cybersécurité, aussi bien dans un contexte personnel que professionnel, et constitue une base essentielle pour évoluer vers des métiers de l’IT, du développement ou de la sécurité informatique",
+    skills: ["Les principes fondamentaux de la sécurité numérique",
+      "La gestion des mots de passe et des accès",
+      "La sécurisation des postes de travail et des réseaux",
+      "La détection des menaces (phishing, malwares, attaques courantes)",
+      "Les bonnes pratiques de protection des données et de la vie privée",
+      "La sensibilisation aux risques numériques en milieu professionnel"],
     imageUrl: "/SecNumacadémie.png",
     credentialLink: "#", // plus utilisé mais requis pour compatibilité
     icon: ShieldCheckIcon,
   },
-  // {
-  //   title: "Introduction à la Cybersécurité",
-  //   issuer: "OpenClassrooms",
-  //   date: "Mai 2024",
-  //   slug: "cybersecurite-openclassrooms",
-  //   description:
-  //     "Découverte des principes de base de la cybersécurité, gestion des risques, sécurité des systèmes et des données.",
-  //   skills: [
-  //     "Sécurité des données",
-  //     "Détection de vulnérabilités",
-  //     "Prévention des attaques",
-  //   ],
-  //   imageUrl: "/certifications/cyber.png",
-  //   credentialLink: "#",
-  //   icon: AcademicCapIcon,
-  // },
+
+  {
+    title: "Introduction à la Cybersécurité",
+    issuer: "OpenClassrooms",
+    date: "Mai 2024",
+    slug: "cybersecurite-openclassrooms",
+    description:
+      "Certification obtenue via Cisco Networking Academy (NetAcad), portant sur les fondamentaux de la cybersécurité et la compréhension des menaces numériques dans les environnements modernes.\n\n\n Cette certification atteste de ma compréhension globale des enjeux de la cybersécurité et de ma capacité à adopter une approche responsable et sécurisée dans les projets informatiques, en lien avec le développement, les réseaux et les systèmes. ",
+    skills: [
+      "Les concepts de base de la cybersécurité et de la cyberdéfense",
+      "Les types de menaces et d’attaques (malwares, phishing, ingénierie sociale, ransomwares)",
+      "Les principes de protection des réseaux, des systèmes et des données",
+      "La gestion des risques et la notion de défense en profondeur",
+      "Les enjeux éthiques et professionnels liés à la cybersécurité",
+      "La découverte des métiers et parcours en cybersécurité",
+    ],
+    imageUrl: "/netacad.png",
+    credentialLink: "#",
+    icon: ShieldCheckIcon,
+  },
 ];
