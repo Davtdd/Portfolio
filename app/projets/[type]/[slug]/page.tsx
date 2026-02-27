@@ -13,6 +13,8 @@ interface Project {
   projectType?: string;
 }
 
+
+
 // CORRECTION : Ajout de searchParams pour correspondre au type Next.js
 interface ProjectPageProps {
   params: Promise<{ type: string; slug: string }>;
@@ -109,6 +111,39 @@ const personalProjects: Project[] = [
     slug: "portfolio",
   },
 
+{
+  title: "Mise en place d’une infrastructure Active Directory avec profils itinérants",
+  description:
+    "Gestion des profils itinérants sous Active Directory\n\n" +
+    "Description approfondie :\n" +
+    "Dans le cadre d’un devoir en administration systèmes et réseaux, ce projet consistait à concevoir et configurer une infrastructure Active Directory permettant la gestion centralisée des profils utilisateurs via des profils itinérants. L’objectif principal était de garantir la portabilité des environnements utilisateurs sur différents postes du domaine tout en assurant la sécurité et la cohérence des données.\n\n" +
+
+    "Un dossier partagé dédié (Profils$) a été mis en place sur le serveur afin d’héberger les profils itinérants. Les droits de partage et les permissions NTFS ont été configurés avec précision pour permettre la création automatique des dossiers utilisateurs grâce à la variable %username%, tout en respectant les bonnes pratiques de sécurité.\n\n" +
+
+    "Fonctionnalités et configurations réalisées :\n" +
+    "- Création et configuration d’un dossier partagé sécurisé pour les profils itinérants.\n" +
+    "- Paramétrage des droits de partage et des permissions NTFS adaptés à un environnement multi-utilisateurs.\n" +
+    "- Mise en place des profils itinérants via Active Directory.\n" +
+    "- Intégration d’un poste client Windows 10 au domaine.\n" +
+    "- Test et validation du chargement et de la synchronisation des profils utilisateurs.\n\n" +
+
+    "Compétences démontrées :\n" +
+    "- Administration d’un environnement Active Directory.\n" +
+    "- Gestion des profils utilisateurs et des droits d’accès.\n" +
+    "- Compréhension des mécanismes de profils itinérants sous Windows Server.\n" +
+    "- Application des bonnes pratiques de sécurité et de gestion des accès.\n" +
+    "- Méthodologie de test et validation fonctionnelle d’une infrastructure système.",
+  technologies: ["Windows Server", "Active Directory", "NTFS", "Windows 10"],
+  imageUrl: "/profils-itinerants.png",
+  link: "/projets/systeme/profils-itinerants",
+  isProfessional: false,
+  slug: "profils-itinerants",
+},
+
+
+
+
+
   {
     title: "Portfolio Personne",
     description:
@@ -117,7 +152,6 @@ const personalProjects: Project[] = [
     imageUrl: "/portfolio.png",
     link: "https://github.com/Davtdd/Portfolio.git",
     isProfessional: false,
-    projectType: "E6",
     slug: "GameConnect",
   },
 

@@ -16,8 +16,20 @@ export const metadata: Metadata = {
     "Découvrez mes projets professionnels et personnels ainsi que mes certifications.",
 };
 
+type ProjectType = "academique" | "E6";
+
+interface ProjectData {
+  title: string;
+  description: string;
+  technologies: string[];
+  imageUrl: string;
+  link: string;
+  isProfessional: boolean;
+  projectType?: ProjectType;
+}
+
 const ProjectsPage = () => {
-  const professionalProjects = [
+  const professionalProjects: ProjectData[] = [
     // {
     //   title: "Application de Gestion de facture",
     //   description:
@@ -39,7 +51,7 @@ const ProjectsPage = () => {
     },
   ];
 
-  const personalProjects = [
+  const personalProjects: ProjectData[] = [
 
 
     // Projet academique
@@ -144,7 +156,7 @@ const ProjectsPage = () => {
         <section className="mb-20">
           <div className="flex items-center gap-3 mb-8">
             <CodeBracketIcon className="h-8 w-8 text-blue-500" />
-            <h2 className="text-2xl font-bold">Projets Personnels & Académiques </h2>
+            <h2 className="text-2xl font-bold">Projets Personnels & Académique</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
