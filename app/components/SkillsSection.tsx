@@ -8,15 +8,15 @@ import {
 const SkillsSection = () => {
   // Compétences techniques
   const technicalSkills = [
-    { name: "JavaScript/TypeScript ",},
-    { name: "React/Next.js ",},
+    { name: "JavaScript/TypeScript ", },
+    { name: "React/Next.js ", },
     { name: "Python ",},
-    { name: "Base de donnee : Mysql, postgress ",},
-    { name: "Réseaux : OSI, TCP/IP, DHCP, DNS, NAT, ARP",},
-    { name: "Sécurité Web",},
-    { name: "PHP",},
-    { name: "Java",},
-    { name: "C#",},
+    { name: "Base de donnee : Mysql, postgress ", },
+    { name: "Réseaux : OSI, TCP/IP, DHCP, DNS, NAT, ARP", },
+    { name: "Sécurité Web", },
+    { name: "PHP", },
+    { name: "Java", },
+    { name: "C#", },
   ];
 
   // Compétences interpersonnelles
@@ -59,12 +59,12 @@ const SkillsSection = () => {
                 <div key={index}>
                   <div className="flex justify-between mb-1">
                     <span className="font-medium">{skill.name}</span>
-                    <span className="text-cyan-400">{skill.level}</span>
+                    <span className="text-cyan-400">{skill.name}</span>
                   </div>
                   <div className="w-full bg-gray-800 rounded-full h-2.5">
                     <div
                       className="bg-gradient-to-r from-cyan-500 to-blue-500 h-2.5 rounded-full"
-                      style={{ width: `${skill.level}` }}
+                      style={{ width: `${skill.name}` }}
                     ></div>
                   </div>
                 </div>
