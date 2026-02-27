@@ -22,9 +22,9 @@ export const certifications = [
 
   {
     title: "Introduction à la Cybersécurité",
-    issuer: "OpenClassrooms",
-    date: "Mai 2024",
-    slug: "cybersecurite-openclassrooms",
+    issuer: "Cisco NetAcad",
+    date: "Octobre 2025",
+    slug: "cybersecurite-ciso",
     description:
       "Certification obtenue via Cisco Networking Academy (NetAcad), portant sur les fondamentaux de la cybersécurité et la compréhension des menaces numériques dans les environnements modernes.\n\n\n Cette certification atteste de ma compréhension globale des enjeux de la cybersécurité et de ma capacité à adopter une approche responsable et sécurisée dans les projets informatiques, en lien avec le développement, les réseaux et les systèmes. ",
     skills: [
