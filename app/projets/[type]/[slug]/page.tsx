@@ -10,6 +10,7 @@ interface Project {
   link: string;
   isProfessional: boolean;
   slug: string;
+  projectType?: string;
 }
 
 // CORRECTION : Ajout de searchParams pour correspondre au type Next.js
@@ -17,7 +18,7 @@ interface ProjectPageProps {
   params: Promise<{ type: string; slug: string }>;
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
-
+// profils-itinerants
 // Données projets (inchangées)
 const professionalProjects: Project[] = [
   {
@@ -34,7 +35,7 @@ const professionalProjects: Project[] = [
     title:
       "Développement d'une plateforme web d’agrégation d’informations (formations, stages, salons d’emploi, événements)",
     description:
-      "Plateforme d’agrégation d’informations (Next.js, TypeScript, Tailwind CSS, Python, PrismaORM, PostgreSQL)\n\nDescription approfondie :\nCette plateforme web vise à centraliser et rendre accessibles les informations sur les formations, stages, alternances, salons d’emploi, spectacles et événements en France. Le projet a été développé avec un stack moderne : Next.js, TypeScript, Tailwind CSS, backend en Python, ORM Prisma et base de données PostgreSQL.\n\nFonctionnalités principales :\n- Conception d’un modèle de données efficace pour stocker différents types d’informations.\n- Développement full-stack avec intégration de scraping de données et d’APIs.\n- Recherche et filtrage des informations pour une consultation rapide.\n- Système de notifications pour les événements à venir.\n- Intégration des réseaux sociaux et mise à jour en temps réel des données.\n- Tests unitaires et déploiement automatisé pour garantir performance et scalabilité.\n\nCompétences démontrées :\n- Développement full-stack moderne avec Next.js et Python.\n- Conception et gestion de bases de données relationnelles complexes.\n- Intégration d’APIs et automatisation de la collecte de données.\n- Création d’interfaces réactives et optimisées pour une bonne UX.",
+      "Plateforme d’agrégation d’informations (Next.js, TypeScript, Tailwind CSS, PostgreSQL)\n\nDescription approfondie :\nCette plateforme web vise à centraliser et rendre accessibles les informations sur les formations, stages, alternances, salons d’emploi, spectacles et événements en France. Le projet a été développé avec une stack moderne : Next.js, TypeScript, Tailwind CSS, PostgreSQL.\n\nFonctionnalités principales :\n- Conception d’un modèle de données efficace pour stocker différents types d’informations.\n- Développement full-stack avec intégration de scraping de données et d’API.\n- Recherche et filtrage des informations pour une consultation rapide.\n- Système de notifications pour les événements à venir.\n- Intégration des réseaux sociaux et mise à jour en temps réel des données.\n- Tests unitaires et déploiement automatisé pour garantir performance et scalabilité.\n\nCompétences démontrées :\n- Développement full-stack moderne avec Next.js \n- Conception et gestion de bases de données relationnelles.\n- Intégration d’API et automatisation de la collecte de données.\n- Création d’interfaces réactives et optimisées pour une bonne UX.",
     technologies: ["Next.js", "PostgreSQL"],
     imageUrl: "/agregation.png",
     link: "https://github.com/FYGS/plateforme-web-aggregation.git",
@@ -64,6 +65,39 @@ const personalProjects: Project[] = [
     isProfessional: false,
     slug: "qcm",
   },
+
+
+  {
+  title: "Mise en place d’une infrastructure Active Directory avec profils itinérants",
+  description:
+    "Gestion des profils itinérants sous Active Directory\n\n" +
+    "Description approfondie :\n" +
+    "Dans le cadre d’un devoir en administration systèmes et réseaux, ce projet consistait à concevoir et configurer une infrastructure Active Directory permettant la gestion centralisée des profils utilisateurs via des profils itinérants. L’objectif principal était de garantir la portabilité des environnements utilisateurs sur différents postes du domaine tout en assurant la sécurité et la cohérence des données.\n\n" +
+
+    "Un dossier partagé dédié (Profils$) a été mis en place sur le serveur afin d’héberger les profils itinérants. Les droits de partage et les permissions NTFS ont été configurés avec précision pour permettre la création automatique des dossiers utilisateurs grâce à la variable %username%, tout en respectant les bonnes pratiques de sécurité.\n\n" +
+
+    "Fonctionnalités et configurations réalisées :\n" +
+    "- Création et configuration d’un dossier partagé sécurisé pour les profils itinérants.\n" +
+    "- Paramétrage des droits de partage et des permissions NTFS adaptés à un environnement multi-utilisateurs.\n" +
+    "- Mise en place des profils itinérants via Active Directory.\n" +
+    "- Intégration d’un poste client Windows 10 au domaine.\n" +
+    "- Test et validation du chargement et de la synchronisation des profils utilisateurs.\n\n" +
+
+    "Compétences démontrées :\n" +
+    "- Administration d’un environnement Active Directory.\n" +
+    "- Gestion des profils utilisateurs et des droits d’accès.\n" +
+    "- Compréhension des mécanismes de profils itinérants sous Windows Server.\n" +
+    "- Application des bonnes pratiques de sécurité et de gestion des accès.\n" +
+    "- Méthodologie de test et validation fonctionnelle d’une infrastructure système.",
+  technologies: ["Windows Server", "Active Directory", "NTFS", "Windows 10"],
+  imageUrl: "/profils-itinerants.png",
+  link: "/projets/systeme/profils-itinerants",
+  isProfessional: true,
+  slug: "profils-itinerants-ad"
+}
+,
+
+
   {
     title: "Portfolio Personnel",
     description:
@@ -74,7 +108,34 @@ const personalProjects: Project[] = [
     isProfessional: false,
     slug: "portfolio",
   },
+
+  {
+    title: "Portfolio Personne",
+    description:
+      "Portfolio de Todd Bahouna Saint réalisé avec Next.js et TailwindCSS, conçu pour présenter mes projets, compétences et réalisations professionnelles. Le site inclut une gestion de veille technologique via Peraltrees pour centraliser et suivre mes apprentissages et actualités techniques. Un formulaire de contact fonctionnel, sécurisé par EmailJS et ReCAPTCHA, permet aux visiteurs de me contacter facilement. L’interface est entièrement responsive et optimisée pour une navigation fluide sur tous les appareils, illustrant mes compétences en développement front-end moderne et expérience utilisateur.",
+    technologies: ["Next.js", "Tailwind CSS"],
+    imageUrl: "/portfolio.png",
+    link: "https://github.com/Davtdd/Portfolio.git",
+    isProfessional: false,
+    projectType: "E6",
+    slug: "GameConnect",
+  },
+
+  {
+    title: "Portfolio Personnn",
+    description:
+      "Portfolio de Todd Bahouna Saint réalisé avec Next.js et TailwindCSS, conçu pour présenter mes projets, compétences et réalisations professionnelles. Le site inclut une gestion de veille technologique via Peraltrees pour centraliser et suivre mes apprentissages et actualités techniques. Un formulaire de contact fonctionnel, sécurisé par EmailJS et ReCAPTCHA, permet aux visiteurs de me contacter facilement. L’interface est entièrement responsive et optimisée pour une navigation fluide sur tous les appareils, illustrant mes compétences en développement front-end moderne et expérience utilisateur.",
+    technologies: ["Next.js", "Tailwind CSS"],
+    imageUrl: "/portfolio.png",
+    link: "https://github.com/Davtdd/Portfolio.git",
+    isProfessional: false,
+    projectType: "E6",
+    slug: "Gestion-budget",
+  },
+
+
 ];
+
 
 // Pré-génération des chemins statiques
 export async function generateStaticParams() {
@@ -84,6 +145,7 @@ export async function generateStaticParams() {
       slug: p.slug,
     })),
     ...personalProjects.map((p) => ({ type: "personnel", slug: p.slug })),
+  
   ];
 }
 

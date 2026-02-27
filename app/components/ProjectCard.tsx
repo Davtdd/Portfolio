@@ -9,6 +9,7 @@ interface ProjectCardProps {
   imageUrl: string;
   link: string;
   isProfessional: boolean;
+  projectType?: "E6" | "academique" | "personnel";
 }
 
 const ProjectCard = ({
@@ -18,20 +19,51 @@ const ProjectCard = ({
   imageUrl,
   link,
   isProfessional,
+  projectType,
 }: ProjectCardProps) => {
+  // libellé du badge selon le type de projet
+  let badgeLabel: string;
+  if (isProfessional) {
+    badgeLabel = "Professionnel";
+  } else if (projectType === "E6") {
+    badgeLabel = "E6";
+  } else if (projectType === "academique") {
+    badgeLabel = "Académique";
+  } else {
+    badgeLabel = "Personnel";
+  }
+
+  // classes utilitaires pour la couleur du badge
+  let badgeClass: string;
+  if (isProfessional) {
+    badgeClass = "bg-cyan-500/20 text-cyan-400";
+  } else if (projectType === "E6") {
+    badgeClass = "bg-purple-500/20 text-purple-400";
+  } else if (projectType === "academique") {
+    badgeClass = "bg-green-500/20 text-green-400";
+  } else {
+    badgeClass = "bg-blue-500/20 text-blue-400";
+  }
+
+  // couleur du lien en bas de carte (optionnellement différenciée)
+  let linkClass: string;
+  if (isProfessional) {
+    linkClass = "text-cyan-400 hover:text-cyan-300";
+  } else if (projectType === "academique") {
+    linkClass = "text-green-400 hover:text-green-300";
+  } else {
+    linkClass = "text-blue-400 hover:text-blue-300";
+  }
+
   return (
     <div className="bg-gray-900/50 rounded-2xl overflow-hidden border border-gray-800 hover:border-cyan-500 transition-colors">
       <div className="relative h-48">
         <Image src={imageUrl} alt={title} fill className="object-cover" />
         <div className="absolute top-4 right-4">
           <span
-            className={`px-3 py-1 rounded-full text-xs font-medium ${
-              isProfessional
-                ? "bg-cyan-500/20 text-cyan-400"
-                : "bg-blue-500/20 text-blue-400"
-            }`}
+            className={`px-3 py-1 rounded-full text-xs font-medium ${badgeClass}`}
           >
-            {isProfessional ? "Professionnel" : "Personnel"}
+            {badgeLabel}
           </span>
         </div>
       </div>
@@ -51,14 +83,7 @@ const ProjectCard = ({
           ))}
         </div>
 
-        <Link
-          href={link}
-          className={`inline-flex items-center font-medium ${
-            isProfessional
-              ? "text-cyan-400 hover:text-cyan-300"
-              : "text-blue-400 hover:text-blue-300"
-          }`}
-        >
+        <Link href={link} className={`inline-flex items-center font-medium ${linkClass}`}>
           Voir le projet
           <svg
             xmlns="http://www.w3.org/2000/svg"

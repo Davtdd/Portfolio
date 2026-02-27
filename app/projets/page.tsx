@@ -18,15 +18,15 @@ export const metadata: Metadata = {
 
 const ProjectsPage = () => {
   const professionalProjects = [
-    {
-      title: "Application de Gestion de facture",
-      description:
-        "Application de gestion des factures avec Next.js & PostgreSQL. Elle permet la gestion des utilisateurs et de leurs factures, avec un tableau récapitulatif dynamique et intuitif.",
-      technologies: ["React", "Node.js", "PostgreSQL"],
-      imageUrl: "/dashboard.png",
-      link: "/projets/professionnel/app-gestion",
-      isProfessional: true,
-    },
+    // {
+    //   title: "Application de Gestion de facture",
+    //   description:
+    //     "Application de gestion des factures avec Next.js & PostgreSQL. Elle permet la gestion des utilisateurs et de leurs factures, avec un tableau récapitulatif dynamique et intuitif.",
+    //   technologies: ["React", "Node.js", "PostgreSQL"],
+    //   imageUrl: "/dashboard.png",
+    //   link: "/projets/professionnel/app-gestion",
+    //   isProfessional: true,
+    // },
     {
       title:
         "Développement d'une plateforme web d’agrégation d’informations (formations, stages, salons d’emploi, événements)",
@@ -40,14 +40,19 @@ const ProjectsPage = () => {
   ];
 
   const personalProjects = [
+
+
+    // Projet academique
+
     {
       title: "Développement d’une application web de petites annonces",
       description:
         "Développement d’une application web de petites annonces inspirée de Leboncoin avec PHP, SQL, HTML/CSS et JavaScript. L’outil permet l’inscription et la connexion sécurisées des utilisateurs, la gestion complète des annonces (création, modification, suppression, favoris), la consultation et le filtrage des annonces, ainsi que la messagerie entre utilisateurs.",
       technologies: ["HTML/CSS", "JavaScript", "PHP", "MySQL"],
       imageUrl: "/leboncoin.png",
-      link: "/projets/personnel/annonces-app",
+      link: "/projets/academique/annonces-app",
       isProfessional: false,
+      projectType: "academique",
     },
     {
       title: "Développement d’une application web de QCM",
@@ -55,7 +60,34 @@ const ProjectsPage = () => {
         "Développement d’une application web de QCM avec PHP et MySQL. Le système permet aux utilisateurs de s’inscrire, de se connecter, de répondre à des questions aléatoires, d’obtenir une note automatique et inclut un journal des activités pour le suivi des connexions et déconnexions.",
       technologies: ["HTML/CSS", "JavaScript", "PHP", "MySQL"],
       imageUrl: "/qcm.png",
-      link: "/projets/personnel/qcm",
+      link: "/projets/academique/qcm",
+      isProfessional: false,
+      projectType: "academique",
+    },
+
+
+    {
+  title: "Mise en place des profils itinérants sous Active Directory",
+  description:
+    "Configuration d’un environnement Active Directory avec gestion des profils itinérants. Mise en place d’un dossier partagé sécurisé pour l’hébergement des profils utilisateurs, intégration d’un poste client Windows 10 au domaine et validation du chargement automatique des profils.",
+  technologies: ["Windows Server", "Active Directory", "Windows 10"],
+  imageUrl: "/profils-itinerants.png",
+  link: "/projets/systeme/profils-itinerants",
+  isProfessional: false,
+  projectType: "academique",
+},
+
+
+
+// Projet E6
+
+     {
+      title: "Portfolio Personnel",
+      description:
+        "Portfolio de Todd Bahouna Saint développé avec Next.js et TailwindCSS. Intègre la gestion de veille technologique avec Peraltrees, un formulaire de contact fonctionnel via EmailJS et un système de ReCAPTCHA pour la sécurité.",
+      technologies: ["Next.js", "Tailwind CSS"],
+      imageUrl: "/portfolio.png",
+      link: "/projets/E6/portfolio",
       isProfessional: false,
     },
 
@@ -65,9 +97,19 @@ const ProjectsPage = () => {
         "Portfolio de Todd Bahouna Saint développé avec Next.js et TailwindCSS. Intègre la gestion de veille technologique avec Peraltrees, un formulaire de contact fonctionnel via EmailJS et un système de ReCAPTCHA pour la sécurité.",
       technologies: ["Next.js", "Tailwind CSS"],
       imageUrl: "/portfolio.png",
-      link: "/projets/personnel/portfolio",
+      link: "/projets/E6/GameConnect",
       isProfessional: false,
-      slug: "portfolio",
+      projectType: "E6",
+    },
+    {
+      title: "Portfolio Personne",
+      description:
+        "Portfolio de Todd Bahouna Saint développé avec Next.js et TailwindCSS. Intègre la gestion de veille technologique avec Peraltrees, un formulaire de contact fonctionnel via EmailJS et un système de ReCAPTCHA pour la sécurité.",
+      technologies: ["Next.js", "Tailwind CSS"],
+      imageUrl: "/portfolio.png",
+      link: "/projets/E6/Gestion-budget",
+      isProfessional: false,
+      projectType: "E6",
     },
   ];
 
@@ -102,7 +144,7 @@ const ProjectsPage = () => {
         <section className="mb-20">
           <div className="flex items-center gap-3 mb-8">
             <CodeBracketIcon className="h-8 w-8 text-blue-500" />
-            <h2 className="text-2xl font-bold">Projets Personnels</h2>
+            <h2 className="text-2xl font-bold">Projets Personnels & Académiques </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
