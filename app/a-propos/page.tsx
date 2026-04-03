@@ -19,14 +19,14 @@ export const metadata: Metadata = {
 };
 
 const AboutPage = () => {
-  const skills = [
-    { name: "Développement Web", level: 85 },
-    { name: "Bases de données", level: 75 },
-    { name: "Réseaux informatiques", level: 65 },
-    { name: "Cybersécurité (connaissance)", level: 70 },
-    { name: "Gestion de projet", level: 60 },
-    { name: "UI/UX Design", level: 55 },
-  ];
+  // const skills = [
+  //   { name: "Développement Web", level: 85 },
+  //   { name: "Bases de données", level: 75 },
+  //   { name: "Réseaux informatiques", level: 65 },
+  //   { name: "Cybersécurité (connaissance)", level: 70 },
+  //   { name: "Gestion de projet", level: 60 },
+  //   { name: "UI/UX Design", level: 55 },
+  // ];
 
   const interests = [
     { name: "Cybersécurité", icon: LightBulbIcon },
