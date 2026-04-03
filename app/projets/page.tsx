@@ -113,16 +113,16 @@ const ProjectsPage = () => {
   isProfessional: false,
   projectType: "E6",
 },
-    {
-      title: "Portfolio Personne",
-      description:
-        "Portfolio de Todd Bahouna Saint développé avec Next.js et TailwindCSS. Intègre la gestion de veille technologique avec Peraltrees, un formulaire de contact fonctionnel via EmailJS et un système de ReCAPTCHA pour la sécurité.",
-      technologies: ["Next.js", "Tailwind CSS"],
-      imageUrl: "/portfolio.png",
-      link: "/projets/E6/Gestion-budget",
-      isProfessional: false,
-      projectType: "E6",
-    },
+{
+  title: "Gestion de Budget",
+  description:
+    "Application desktop de gestion budgétaire développée en Java avec JavaFX et MySQL, permettant de gérer ses revenus, dépenses et visualiser son solde.",
+  technologies: ["Java", "JavaFX", "MySQL"],
+  imageUrl: "/gestion-budget.png",
+  link: "/projets/E6/Gestion-budget",
+  isProfessional: false,
+  projectType: "E6",
+},
   ];
 
   return (

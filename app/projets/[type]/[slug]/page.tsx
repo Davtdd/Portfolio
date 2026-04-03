@@ -155,17 +155,17 @@ const personalProjects: Project[] = [
   slug: "GameConnect",
 },
 
-  {
-    title: "Portfolio Personnn",
-    description:
-      "Portfolio de Todd Bahouna Saint réalisé avec Next.js et TailwindCSS, conçu pour présenter mes projets, compétences et réalisations professionnelles. Le site inclut une gestion de veille technologique via Peraltrees pour centraliser et suivre mes apprentissages et actualités techniques. Un formulaire de contact fonctionnel, sécurisé par EmailJS et ReCAPTCHA, permet aux visiteurs de me contacter facilement. L’interface est entièrement responsive et optimisée pour une navigation fluide sur tous les appareils, illustrant mes compétences en développement front-end moderne et expérience utilisateur.\n Tous les documents présents sur mon GitHub en cliquant sur voir le projet complet ",
-    technologies: ["Next.js", "Tailwind CSS"],
-    imageUrl: "/portfolio.png",
-    link: "https://github.com/Davtdd/BudjetPersonnel",
-    isProfessional: false,
-    projectType: "E6",
-    slug: "Gestion-budget",
-  },
+{
+  title: "Gestion de Budget",
+  description:
+    "Application desktop de gestion budgétaire développée en Java avec JavaFX pour l’interface graphique et MySQL pour la gestion des données. Elle permet à un utilisateur de s’inscrire et se connecter de manière sécurisée grâce à un système d’authentification avec mots de passe hashés. L’utilisateur peut enregistrer ses revenus et ses dépenses en les catégorisant (loyer, loisirs, courses, etc.), tout en bénéficiant d’un calcul automatique du solde. L’application propose également une visualisation des dépenses via un diagramme circulaire pour faciliter l’analyse financière, ainsi qu’un historique complet des transactions modifiables et supprimables. La base de données a été conçue en amont avec les modèles MCD, MLD et MPD, et l’architecture repose sur une séparation des couches (interface, logique métier, accès aux données).\n Tous les documents présents sur mon GitHub en cliquant sur voir le projet complet ",
+  technologies: ["Java", "JavaFX", "MySQL"],
+  imageUrl: "/gestion-budget.png",
+  link: "https://github.com/Davtdd/BudjetPersonnel",
+  isProfessional: false,
+  projectType: "E6",
+  slug: "Gestion-budget",
+},
 
 
 ];
