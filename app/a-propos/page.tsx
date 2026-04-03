@@ -193,10 +193,10 @@ const AboutPage = () => {
 
         {/* Section Compétences */}
         <section className="mb-20">
-          <h2 className="text-2xl font-bold mb-8">Mes compétences</h2>
+          {/* <h2 className="text-2xl font-bold mb-8">Mes compétences</h2> */}
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gray-900/50 rounded-2xl p-6 border border-gray-800">
+            {/* <div className="bg-gray-900/50 rounded-2xl p-6 border border-gray-800">
               <h3 className="text-xl font-bold mb-6">Techniques</h3>
 
               <div className="space-y-6">
@@ -215,10 +215,10 @@ const AboutPage = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             <div className="bg-gray-900/50 rounded-2xl p-6 border border-gray-800">
-              <h3 className="text-xl font-bold mb-6">Centres d’intérêt</h3>
+              <h2 className="text-xl font-bold mb-6">Centres d’intérêt</h2>
 
               <div className="grid grid-cols-2 gap-4">
                 {interests.map((interest, index) => (

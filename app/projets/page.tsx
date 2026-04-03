@@ -99,20 +99,20 @@ const ProjectsPage = () => {
         "Portfolio de Todd Bahouna Saint développé avec Next.js et TailwindCSS. Intègre la gestion de veille technologique avec Peraltrees, un formulaire de contact fonctionnel via EmailJS et un système de ReCAPTCHA pour la sécurité.",
       technologies: ["Next.js", "Tailwind CSS"],
       imageUrl: "/portfolio.png",
-      link: "/projets/E6/portfolio",
+      link: "/projets/portfolio/portfolio",
       isProfessional: false,
     },
 
-    {
-      title: "Portfolio Personnel",
-      description:
-        "Portfolio de Todd Bahouna Saint développé avec Next.js et TailwindCSS. Intègre la gestion de veille technologique avec Peraltrees, un formulaire de contact fonctionnel via EmailJS et un système de ReCAPTCHA pour la sécurité.",
-      technologies: ["Next.js", "Tailwind CSS"],
-      imageUrl: "/portfolio.png",
-      link: "/projets/E6/GameConnect",
-      isProfessional: false,
-      projectType: "E6",
-    },
+   {
+  title: "GameConnect",
+  description:
+    "GameConnect est un réseau social pour gamers développé en HTML, CSS et PHP avec une base de données MySQL. Il permet aux utilisateurs de s’inscrire et se connecter avec un profil personnalisé (pseudo, avatar, bio), de publier des posts (texte, images, liens vidéos), de commenter et liker les publications, et de consulter un fil d’actualité ainsi que les profils utilisateurs. Le projet illustre les compétences en développement web front-end et back-end pour un usage interactif et fonctionnel.",
+  technologies: ["HTML", "CSS", "PHP", "MySQL"],
+  imageUrl: "/gameconnect.png",
+  link: "/projets/E6/GameConnect",
+  isProfessional: false,
+  projectType: "E6",
+},
     {
       title: "Portfolio Personne",
       description:

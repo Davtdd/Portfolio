@@ -135,7 +135,7 @@ const personalProjects: Project[] = [
     "- Méthodologie de test et validation fonctionnelle d’une infrastructure système.",
   technologies: ["Windows Server", "Active Directory", "NTFS", "Windows 10"],
   imageUrl: "/profils-itinerants.png",
-  link: "/projets/systeme/profils-itinerants",
+  link: " .",
   isProfessional: false,
   slug: "profils-itinerants",
 },
@@ -144,24 +144,24 @@ const personalProjects: Project[] = [
 
 
 
-  {
-    title: "Portfolio Personne",
-    description:
-      "Portfolio de Todd Bahouna Saint réalisé avec Next.js et TailwindCSS, conçu pour présenter mes projets, compétences et réalisations professionnelles. Le site inclut une gestion de veille technologique via Peraltrees pour centraliser et suivre mes apprentissages et actualités techniques. Un formulaire de contact fonctionnel, sécurisé par EmailJS et ReCAPTCHA, permet aux visiteurs de me contacter facilement. L’interface est entièrement responsive et optimisée pour une navigation fluide sur tous les appareils, illustrant mes compétences en développement front-end moderne et expérience utilisateur.",
-    technologies: ["Next.js", "Tailwind CSS"],
-    imageUrl: "/portfolio.png",
-    link: "https://github.com/Davtdd/Portfolio.git",
-    isProfessional: false,
-    slug: "GameConnect",
-  },
+ {
+  title: "GameConnect",
+  description:
+    "GameConnect est un réseau social dédié aux gamers, développé en HTML, CSS et PHP avec une base de données MySQL. Cette version bêta permet aux utilisateurs de s’inscrire et se connecter via un système d’authentification sécurisé avec mot de passe hashé et gestion de session. Chaque utilisateur dispose d’un profil personnalisé incluant pseudo, avatar et bio. La plateforme propose un fil d’actualité affichant les publications des utilisateurs par ordre chronologique, avec la possibilité de créer des posts contenant du texte, des images ou des liens vers des vidéos de gameplay. Les utilisateurs peuvent interagir entre eux grâce à un système de commentaires et de likes avec compteur. L’interface est conçue pour être simple, fonctionnelle et adaptée aux usages d’un réseau social, illustrant les compétences en développement web back-end et front-end ainsi qu’en gestion de base de données.\n Tous les documents présents sur mon GitHub en cliquant sur voir le projet complet ",
+  technologies: ["HTML", "CSS", "PHP", "MySQL"],
+  imageUrl: "/gameconnect.png",
+  link: "https://github.com/Davtdd/GameConnect",
+  isProfessional: false,
+  slug: "GameConnect",
+},
 
   {
     title: "Portfolio Personnn",
     description:
-      "Portfolio de Todd Bahouna Saint réalisé avec Next.js et TailwindCSS, conçu pour présenter mes projets, compétences et réalisations professionnelles. Le site inclut une gestion de veille technologique via Peraltrees pour centraliser et suivre mes apprentissages et actualités techniques. Un formulaire de contact fonctionnel, sécurisé par EmailJS et ReCAPTCHA, permet aux visiteurs de me contacter facilement. L’interface est entièrement responsive et optimisée pour une navigation fluide sur tous les appareils, illustrant mes compétences en développement front-end moderne et expérience utilisateur.",
+      "Portfolio de Todd Bahouna Saint réalisé avec Next.js et TailwindCSS, conçu pour présenter mes projets, compétences et réalisations professionnelles. Le site inclut une gestion de veille technologique via Peraltrees pour centraliser et suivre mes apprentissages et actualités techniques. Un formulaire de contact fonctionnel, sécurisé par EmailJS et ReCAPTCHA, permet aux visiteurs de me contacter facilement. L’interface est entièrement responsive et optimisée pour une navigation fluide sur tous les appareils, illustrant mes compétences en développement front-end moderne et expérience utilisateur.\n Tous les documents présents sur mon GitHub en cliquant sur voir le projet complet ",
     technologies: ["Next.js", "Tailwind CSS"],
     imageUrl: "/portfolio.png",
-    link: "https://github.com/Davtdd/Portfolio.git",
+    link: "https://github.com/Davtdd/BudjetPersonnel",
     isProfessional: false,
     projectType: "E6",
     slug: "Gestion-budget",
