@@ -3,6 +3,7 @@ import {
   CodeBracketIcon,
   ServerIcon,
   AcademicCapIcon,
+  ArrowDownTrayIcon,
 } from "@heroicons/react/24/outline";
 
 const BtsInfoSection = () => {
@@ -84,6 +85,40 @@ const BtsInfoSection = () => {
             dans le secteur informatique.
           </p>
         </div>
+        <div className="flex flex-col items-center justify-center text-center mb-16 px-4">
+  <h2 className="text-3xl md:text-4xl font-bold">
+    Consultation de mon <span className="text-cyan-400">tableau de synthèse</span>
+  </h2>
+  <p className="mt-4 text-lg text-gray-400 max-w-2xl">
+    Dans le cadre de l’épreuve E5 du BTS SIO option SLAM, je vous invite à consulter mon tableau de synthèse.
+    Celui-ci présente l’ensemble des compétences acquises ainsi que les projets réalisés durant ma formation.
+  </p>
+
+  <div className="mt-12 w-full max-w-md">
+    <a
+      href="/Tableau_synthese.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex flex-col items-center justify-center p-8 bg-gray-900 rounded-2xl border border-gray-800 hover:border-cyan-500 transition-colors group"
+    >
+      <div className="w-16 h-16 flex items-center justify-center rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 mb-6">
+        <ArrowDownTrayIcon className="h-8 w-8 text-white" />
+      </div>
+
+      <h3 className="text-xl font-bold mb-2 text-center">
+        Consulter le tableau de synthèse
+      </h3>
+
+      <p className="text-gray-400 text-center">
+        Accédez à une vue globale de mes compétences, activités professionnelles et réalisations en lien avec le référentiel du BTS SIO.
+      </p>
+
+      <span className="mt-4 text-cyan-400 group-hover:underline">
+        Ouvrir le document
+      </span>
+    </a>
+  </div>
+</div>
       </div>
     </section>
   );
