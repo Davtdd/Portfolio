@@ -13,8 +13,7 @@ const PearltreesSection = () => {
           </p>
           <p className="text-gray-300 mb-6">
             Cette plateforme me permet de collecter, organiser et partager des
-            ressources pertinentes sur la cybersécurité dans l’industrie du jeu
-            vidéo.
+            ressources pertinentes.
           </p>
           <a
             href="https://www.pearltrees.com/"
