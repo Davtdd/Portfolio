@@ -43,8 +43,8 @@ const ProjectsPage = () => {
       title:
         "Développement d'une plateforme web d’agrégation d’informations (formations, stages, salons d’emploi, événements)",
       description:
-        "Développement d'une plateforme web d’agrégation d’informations (formations, stages, salons d’emploi, événements) avec Next.js, TypeScript, TailwindCSS, Python, PrismaORM et PostgreSQL. Le projet permet la centralisation, la recherche et le filtrage des opportunités, avec un système de notifications et une architecture scalable.",
-      technologies: ["Next.js", "Stripe", "PostgreSQL"],
+        "Développement d'une plateforme web d’agrégation d’informations (formations, stages, salons d’emploi, événements) avec Next.js, TypeScript, TailwindCSS, et PostgreSQL. Le projet permet la centralisation, la recherche et le filtrage des opportunités.",
+      technologies: ["Next.js","TailwindCSS", "PostgreSQL"],
       imageUrl: "/agregation.png",
       link: "/projets/professionnel/agregation",
       isProfessional: true,
