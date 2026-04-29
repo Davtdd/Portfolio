@@ -94,7 +94,7 @@ const ProjectsPage = () => {
     "Mise en place d’une segmentation réseau via VLAN afin d’isoler différents services. Configuration des ports sur un switch, mise en place du routage inter-VLAN et vérification de la connectivité entre les réseaux.",
   technologies: ["Cisco Packet Tracer", "VLAN", "Routage", "Switching"],
   imageUrl: "/vlan.png",
-  link: "/projets/reseau/vlan",
+  link: "/projets/reseau/vlan-reseau",
   isProfessional: false,
   projectType: "academique",
 },

@@ -95,7 +95,7 @@ const personalProjects: Project[] = [
   imageUrl: "/profils-itinerants.png",
   link: "/projets/systeme/profils-itinerants",
   isProfessional: true,
-  slug: "profils-itinerants-ad"
+  slug: "profils-itinerants"
 }
 ,
 {
@@ -125,11 +125,10 @@ const personalProjects: Project[] = [
     "- Mise en œuvre des bonnes pratiques de structuration réseau.",
   technologies: ["Cisco Packet Tracer", "VLAN", "Routage", "Switching"],
   imageUrl: "/vlan.png",
-  link: "/projets/reseau/vlan",
+  link: "/projets/reseau/vlan-reseau",
   isProfessional: true,
   slug: "vlan-reseau"
 },
-
 
 
   {
