@@ -98,6 +98,38 @@ const personalProjects: Project[] = [
   slug: "profils-itinerants-ad"
 }
 ,
+{
+  title: "Mise en place d’une infrastructure réseau segmentée avec VLAN",
+  description:
+    "Configuration de VLAN et routage inter-VLAN\n\n" +
+
+    "Description approfondie :\n" +
+    "Dans le cadre d’un projet en administration réseaux, ce travail consistait à concevoir une architecture réseau segmentée à l’aide de VLAN (Virtual Local Area Network). L’objectif principal était de séparer logiquement plusieurs réseaux au sein d’une même infrastructure physique afin d’améliorer la sécurité, les performances et l’organisation du système d’information.\n\n" +
+
+    "Plusieurs VLAN ont été créés pour représenter différents services (ex : administration, utilisateurs, invités). Les ports du switch ont été configurés en mode access pour être affectés aux VLAN correspondants, tandis qu’un lien trunk a été mis en place pour permettre la communication entre les équipements réseau.\n\n" +
+
+    "Le routage inter-VLAN a été configuré via un routeur (Router-on-a-Stick), permettant aux différents VLAN de communiquer entre eux tout en conservant leur isolation logique. Des tests de connectivité (ping) ont été réalisés afin de valider le bon fonctionnement de l’ensemble de l’infrastructure.\n\n" +
+
+    "Fonctionnalités et configurations réalisées :\n" +
+    "- Création et configuration de plusieurs VLAN.\n" +
+    "- Affectation des ports du switch aux VLAN correspondants.\n" +
+    "- Configuration d’un lien trunk entre switch et routeur.\n" +
+    "- Mise en place du routage inter-VLAN (Router-on-a-Stick).\n" +
+    "- Vérification de la connectivité entre les différents réseaux.\n\n" +
+
+    "Compétences démontrées :\n" +
+    "- Segmentation réseau avec VLAN.\n" +
+    "- Configuration de switch (mode access et trunk).\n" +
+    "- Compréhension du routage inter-VLAN.\n" +
+    "- Diagnostic réseau et tests de connectivité.\n" +
+    "- Mise en œuvre des bonnes pratiques de structuration réseau.",
+  technologies: ["Cisco Packet Tracer", "VLAN", "Routage", "Switching"],
+  imageUrl: "/vlan.png",
+  link: "/projets/reseau/vlan",
+  isProfessional: true,
+  slug: "vlan-reseau"
+},
+
 
 
   {
@@ -110,38 +142,6 @@ const personalProjects: Project[] = [
     isProfessional: false,
     slug: "portfolio",
   },
-
-{
-  title: "Mise en place d’une infrastructure Active Directory avec profils itinérants",
-  description:
-    "Gestion des profils itinérants sous Active Directory\n\n" +
-    "Description approfondie :\n" +
-    "Dans le cadre d’un devoir en administration systèmes et réseaux, ce projet consistait à concevoir et configurer une infrastructure Active Directory permettant la gestion centralisée des profils utilisateurs via des profils itinérants. L’objectif principal était de garantir la portabilité des environnements utilisateurs sur différents postes du domaine tout en assurant la sécurité et la cohérence des données.\n\n" +
-
-    "Un dossier partagé dédié (Profils$) a été mis en place sur le serveur afin d’héberger les profils itinérants. Les droits de partage et les permissions NTFS ont été configurés avec précision pour permettre la création automatique des dossiers utilisateurs grâce à la variable %username%, tout en respectant les bonnes pratiques de sécurité.\n\n" +
-
-    "Fonctionnalités et configurations réalisées :\n" +
-    "- Création et configuration d’un dossier partagé sécurisé pour les profils itinérants.\n" +
-    "- Paramétrage des droits de partage et des permissions NTFS adaptés à un environnement multi-utilisateurs.\n" +
-    "- Mise en place des profils itinérants via Active Directory.\n" +
-    "- Intégration d’un poste client Windows 10 au domaine.\n" +
-    "- Test et validation du chargement et de la synchronisation des profils utilisateurs.\n\n" +
-
-    "Compétences démontrées :\n" +
-    "- Administration d’un environnement Active Directory.\n" +
-    "- Gestion des profils utilisateurs et des droits d’accès.\n" +
-    "- Compréhension des mécanismes de profils itinérants sous Windows Server.\n" +
-    "- Application des bonnes pratiques de sécurité et de gestion des accès.\n" +
-    "- Méthodologie de test et validation fonctionnelle d’une infrastructure système.",
-  technologies: ["Windows Server", "Active Directory", "NTFS", "Windows 10"],
-  imageUrl: "/profils-itinerants.png",
-  link: " .",
-  isProfessional: false,
-  slug: "profils-itinerants",
-},
-
-
-
 
 
  {

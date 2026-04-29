@@ -88,6 +88,17 @@ const ProjectsPage = () => {
   isProfessional: false,
   projectType: "academique",
 },
+{
+  title: "Configuration de VLAN et routage inter-VLAN",
+  description:
+    "Mise en place d’une segmentation réseau via VLAN afin d’isoler différents services. Configuration des ports sur un switch, mise en place du routage inter-VLAN et vérification de la connectivité entre les réseaux.",
+  technologies: ["Cisco Packet Tracer", "VLAN", "Routage", "Switching"],
+  imageUrl: "/vlan.png",
+  link: "/projets/reseau/vlan",
+  isProfessional: false,
+  projectType: "academique",
+},
+
 
 
 
