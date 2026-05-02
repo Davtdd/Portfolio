@@ -99,6 +99,40 @@ const personalProjects: Project[] = [
 }
 ,
 {
+  title: "Analyse d’une attaque Man-in-the-Middle par ARP Spoofing",
+  description:
+    "Projet d’analyse d’une attaque Man-in-the-Middle via ARP Spoofing\n\n" +
+
+    "Description approfondie :\n" +
+    "Dans le cadre d’un projet en administration systèmes et réseaux, cette étude avait pour objectif de comprendre, reproduire en environnement contrôlé et analyser une attaque de type Man-in-the-Middle (MITM) basée sur l’ARP Spoofing. L’attaque a été réalisée dans un réseau local de test afin d’observer le comportement des machines et l’impact sur la sécurité des communications.\n\n" +
+
+    "Le scénario consistait à simuler un attaquant placé sur le même réseau local que les victimes, permettant ainsi l’usurpation des tables ARP et l’interception du trafic réseau. Cette approche a permis de mettre en évidence les risques liés à l’absence de mécanismes de protection au niveau de la couche liaison.\n\n" +
+
+    "Activités réalisées :\n" +
+    "- Mise en place d’un réseau local de test isolé (environnement virtualisé).\n" +
+    "- Simulation d’un attaquant présent sur le même réseau que les victimes.\n" +
+    "- Utilisation d’outils d’ARP Spoofing pour empoisonner les tables ARP.\n" +
+    "- Interception et redirection du trafic réseau entre les machines cibles.\n" +
+    "- Analyse des paquets capturés (identifiants, données non chiffrées, requêtes réseau).\n" +
+    "- Observation des échanges en clair et identification des failles de sécurité.\n" +
+    "- Étude de l’impact sur la confidentialité et l’intégrité des données.\n" +
+    "- Proposition de contre-mesures : ARP statique, utilisation de HTTPS, mise en place d’un IDS/IPS.\n\n" +
+
+    "Compétences démontrées :\n" +
+    "- Compréhension du fonctionnement du protocole ARP et des attaques MITM.\n" +
+    "- Mise en place et sécurisation d’un réseau local de test.\n" +
+    "- Analyse de trafic réseau et inspection de paquets.\n" +
+    "- Utilisation d’outils de cybersécurité en environnement contrôlé.\n" +
+    "- Identification des vulnérabilités réseau et des risques associés.\n" +
+    "- Proposition de solutions de sécurisation adaptées (prévention et détection).\n" +
+    "- Sensibilisation aux bonnes pratiques de sécurité réseau.",
+  technologies: ["Linux", "Wireshark", "ARP Spoofing Tools", "VirtualBox", "Réseaux TCP/IP"],
+  imageUrl: "/arp.png",
+  link: "/projets/reseau/arp-spoofing-mitm",
+  isProfessional: true,
+  slug: "arp-spoofing-mitm"
+},
+{
   title: "Mise en place d’une infrastructure réseau segmentée avec VLAN",
   description:
     "Configuration de VLAN et routage inter-VLAN\n\n" +

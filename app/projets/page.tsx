@@ -89,6 +89,16 @@ const ProjectsPage = () => {
   projectType: "academique",
 },
 {
+  title: "Analyse d’une attaque Man-in-the-Middle par ARP Spoofing",
+  description:
+    "Simulation et analyse d’une attaque MITM par ARP Spoofing en réseau local. Capture et étude du trafic réseau afin d’identifier les failles de sécurité et proposer des contre-mesures.",
+  technologies: ["Linux", "Wireshark", "ARP Spoofing", "Réseaux TCP/IP"],
+  imageUrl: "/arp.png",
+  link: "/projets/reseau/arp-spoofing-mitm",
+  isProfessional: false,
+  projectType: "academique",
+},
+{
   title: "Configuration de VLAN et routage inter-VLAN",
   description:
     "Mise en place d’une segmentation réseau via VLAN afin d’isoler différents services. Configuration des ports sur un switch, mise en place du routage inter-VLAN et vérification de la connectivité entre les réseaux.",
