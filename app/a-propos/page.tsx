@@ -52,22 +52,13 @@ const AboutPage = () => {
   `,
     },
     {
-      date: "3 juin - août 2025",
+      date: "3 juin - août 2025 et 22 décembre - 31 janvier",
       title: "Stage Développeur Web",
       institution: "A'Numerique",
       description: `
-    - Développement d’un application de Gestion de facture(Next.js + PostgreSQL), déployé sur Vercel.
+    - Développement d’un application de Gestion de facture(Next.js + PostgreSQL), déployé sur Vercel.(formation sur next.js)
     
-    - Conception et réalisation d’une Plateforme Web d’Agrégation d’Informations (alternances, stages, formations, salons d'emploi, spectacles, événements) destinée à faciliter l’accès à l’information pour les étudiants, chercheurs d’emploi et alternants.
-    
-    Missions principales :
-    • Participation au développement Fullstack avec Next.js (React), TypeScript, Tailwind CSS, Python, PrismaORM et PostgreSQL.
-    • Veille technologique et étude des meilleures solutions pour le scraping, extraction et traitement de données.
-    • Conception d’une architecture robuste pour une mise à jour des données en temps réel.
-    • Implémentation de fonctionnalités clés : recherche, filtrage, notifications événementielles, intégration réseaux sociaux.
-    • Tests unitaires et d’intégration pour assurer qualité et performance.
-    • Rédaction d’une documentation technique détaillée.
-    • Déploiement automatisé et optimisation de l’expérience utilisateur.
+    - Conception et réalisation d’une Plateforme Web d’Agrégation d’Informations (alternances, stages, formations, salons d'emploi, spectacles, événements) destinée à faciliter l’accès à l’information pour les étudiants, chercheurs d’emploi et alternants(projet principal).
     
     Objectif du projet :
     Offrir une plateforme scalable et intuitive pour centraliser et rendre accessibles les informations essentielles sur les formations et événements en France, répondant à un besoin crucial des publics ciblés.
