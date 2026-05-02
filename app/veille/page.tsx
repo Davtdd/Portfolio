@@ -30,28 +30,30 @@ export default function VeillePage() {
   </h2>
 
   <div className="prose prose-invert max-w-none">
-    <p>
-      L&#39;intelligence artificielle pose des risques croissants pour la sécurité des systèmes d&#39;exploitation et applications, en amplifiant les cyberattaques et en introduisant de nouvelles vulnérabilités. Des menaces comme le code généré par IA vulnérable et l&#39;automatisation des attaques.
-    </p><br />
+  <a
+    href="/intelligence artificielle pose des risques croissants pour la sécurité des systèmes et applications.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block bg-zinc-900 hover:bg-zinc-800 transition rounded-2xl p-6 border border-zinc-700 shadow-lg"
+  >
+    <div className="flex items-center gap-4">
+      {/* Icône PDF */}
+      <div className="text-red-500 text-4xl">
+        📄
+      </div>
 
-    <strong><h3>Menaces Principales</h3><br /></strong>
-
-    <p>
-      L&#39;IA facilite le phishing sophistiqué via deepfakes et emails personnalisés, rendant les attaques plus convaincantes et massives. Les malwares polymorphes auto-évolutifs échappent aux antivirus traditionnels en modifiant leur code dynamiquement. L&#39;empoisonnement de données biaise les modèles IA intégrés aux OS ou apps, faussant les détections de sécurité.
-    </p><br />
-
-    <p>
-      <strong>Vulnérabilités dans le Code :</strong> 70% des entreprises détectent des failles dans le code généré par IA, avec 20% subissant des incidents graves dus à une inspection insuffisante. Les outils comme Copilot reproduisent des vulnérabilités de leurs données d&#39;entraînement, comme des injections SQL. L&#39;&quot;IA fantôme&quot; (outils non autorisés) crée des angles morts, augmentant les risques dans les apps.
-    </p><br />
-
-    <p>
-      <strong>Attaques sur Systèmes :</strong> Les bots IA scannent massivement les failles zero-day dans les OS et apps, exploitant-les en minutes. Les attaques adversariales trompent les IA embarquées (ex. : reconnaissance dans Android/iOS), menaçant la stabilité. Prompt injection exploite les chatbots ou assistants dans les applications.
-    </p><br />
-
-    <p>
-      <strong>Mesures Recommandées :</strong> Renforcez les revues de code et formations pour contrer les failles IA. Adoptez des SIEM IA pour détecter anomalies en temps réel. Contrôlez l&#39;usage d&#39;IA via politiques internes.
-    </p>
-  </div>
+      {/* Contenu */}
+      <div>
+        <h3 className="text-xl font-bold">
+          Veille : IA et cybersécurité
+        </h3>
+        <p className="text-zinc-400">
+          Intelligence artificielle et risques croissants pour la sécurité des systèmes et applications.
+        </p>
+      </div>
+    </div>
+  </a>
+</div>
 </div>
       </div>
     </div>
