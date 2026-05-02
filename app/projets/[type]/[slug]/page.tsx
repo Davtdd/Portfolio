@@ -133,6 +133,36 @@ const personalProjects: Project[] = [
   slug: "arp-spoofing-mitm"
 },
 {
+  title: "Installation et configuration d’un serveur DHCP et DNS",
+  description:
+    "Projet d’installation et de configuration d’un serveur DHCP et DNS en environnement réseau local\n\n" +
+
+    "Description approfondie :\n" +
+    "Dans le cadre d’un projet en systèmes et réseaux, l’objectif était de mettre en place une infrastructure permettant l’automatisation de l’attribution des adresses IP ainsi que la résolution de noms au sein d’un réseau local. Le serveur DHCP a été configuré pour distribuer automatiquement des adresses IP aux machines clientes, réduisant ainsi les erreurs de configuration manuelle et facilitant la gestion du réseau.\n\n" +
+
+    "Parallèlement, un serveur DNS a été installé et configuré afin d’assurer la résolution des noms de domaine en adresses IP, permettant une communication plus simple et plus intuitive entre les machines du réseau. Des tests de connectivité ont été réalisés entre les postes clients afin de vérifier le bon fonctionnement des services DHCP et DNS.\n\n" +
+
+    "Activités réalisées :\n" +
+    "- Installation et configuration d’un serveur DHCP.\n" +
+    "- Définition de plages d’adresses IP et options réseau.\n" +
+    "- Mise en place et configuration d’un serveur DNS local.\n" +
+    "- Association des noms d’hôtes aux adresses IP.\n" +
+    "- Tests de connectivité entre plusieurs postes clients.\n" +
+    "- Vérification du bon renouvellement des adresses IP.\n\n" +
+
+    "Compétences démontrées :\n" +
+    "- Administration d’un serveur DHCP et DNS.\n" +
+    "- Compréhension du fonctionnement de l’adressage IP dynamique.\n" +
+    "- Gestion de la résolution de noms dans un réseau local.\n" +
+    "- Diagnostic et tests de connectivité réseau.\n" +
+    "- Mise en place d’une infrastructure réseau fonctionnelle.",
+  technologies: ["Windows Server", "DHCP", "DNS", "Réseaux TCP/IP"],
+  imageUrl: "/dhcp-dns.png",
+  link: "/projets/reseau/dhcp-dns",
+  isProfessional: true,
+  slug: "dhcp-dns"
+},
+{
   title: "Mise en place d’une infrastructure réseau segmentée avec VLAN",
   description:
     "Configuration de VLAN et routage inter-VLAN\n\n" +

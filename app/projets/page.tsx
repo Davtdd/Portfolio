@@ -99,6 +99,16 @@ const ProjectsPage = () => {
   projectType: "academique",
 },
 {
+  title: "Installation et configuration d’un serveur DHCP et DNS",
+  description:
+    "Mise en place d’un serveur DHCP pour l’attribution automatique des adresses IP et d’un serveur DNS pour la résolution de noms sur un réseau local, avec tests de connectivité entre postes.",
+  technologies: ["Windows Server", "DHCP", "DNS"],
+  imageUrl: "/dhcp-dns.png",
+  link: "/projets/reseau/dhcp-dns",
+  isProfessional: false,
+  projectType: "academique",
+},
+{
   title: "Configuration de VLAN et routage inter-VLAN",
   description:
     "Mise en place d’une segmentation réseau via VLAN afin d’isoler différents services. Configuration des ports sur un switch, mise en place du routage inter-VLAN et vérification de la connectivité entre les réseaux.",
