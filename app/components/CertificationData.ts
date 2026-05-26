@@ -39,4 +39,23 @@ export const certifications = [
     credentialLink: "#",
     icon: ShieldCheckIcon,
   },
+  {
+  title: "HTML Essentials",
+  issuer: "Cisco NetAcad",
+  date: "26 mai",
+  slug: "html-essentials",
+  description:
+    "Formation d’introduction aux bases du HTML permettant de créer des pages web structurées, accessibles et interactives à partir de zéro. Ce cours est idéal pour les débutants souhaitant comprendre le fonctionnement du Web et poser des bases solides en développement front-end.\n\nCette formation m’a permis d’acquérir une compréhension claire de la structure d’une page web et des bonnes pratiques de développement HTML moderne.",
+  skills: [
+    "Compréhension de la structure d’un document HTML",
+    "Utilisation des balises HTML (titres, paragraphes, listes, images, liens)",
+    "Création de formulaires simples (inputs, labels, boutons)",
+    "Notions de sémantique HTML et accessibilité",
+    "Organisation du contenu web de manière logique et lisible",
+    "Introduction aux bonnes pratiques du développement web"
+  ],
+  imageUrl: "/Html.png",
+  credentialLink: "#",
+  icon: ShieldCheckIcon,
+},
 ];
