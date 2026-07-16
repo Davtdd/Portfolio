@@ -58,16 +58,18 @@ const CyberSecuritySection = () => {
 
         <div className="mt-16 bg-gradient-to-r from-cyan-900/20 to-blue-900/20 rounded-2xl p-8 border border-cyan-800/50">
           <div className="flex flex-col md:flex-row gap-8 items-center">
-           <div className="md:w-2/3">
+ <div className="md:w-2/3">
   <h3 className="text-2xl font-bold mb-4">
     Pourquoi la cybersécurité ?
   </h3>
+
   <p className="text-gray-300 mb-4">
     La cybersécurité est un domaine essentiel qui contribue à protéger les
-    systèmes d'information, les données et les utilisateurs face à des menaces
-    en constante évolution. C'est un secteur dynamique qui demande une veille
-    permanente, de la rigueur et une réelle capacité d'analyse.
+    systèmes d&apos;information, les données et les utilisateurs face à des menaces
+    en constante évolution. C&apos;est un secteur dynamique qui demande une veille
+    permanente, de la rigueur et une réelle capacité d&apos;analyse.
   </p>
+
   <p className="text-gray-300">
     Je souhaite évoluer dans cet univers afin de développer continuellement mes
     compétences techniques, relever de nouveaux défis et participer à la
