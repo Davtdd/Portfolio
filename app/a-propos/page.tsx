@@ -39,7 +39,7 @@ const AboutPage = () => {
 
   const timelineEvents = [
     {
-      date: "2024 – Présent",
+      date: "2024 – 2026",
       title: "BTS Services Informatiques aux Organisations (SIO) – Option SLAM",
       institution: "F2I",
       description: `
