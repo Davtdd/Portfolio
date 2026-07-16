@@ -19,12 +19,12 @@ const CyberSecuritySection = () => {
       description:
         "Bonne maîtrise des principes OWASP, avec une attention particulière à la protection contre les injections SQL, les attaques XSS, ainsi qu’à la mise en place de systèmes d’authentification robustes.",
     },
-    {
-      icon: ChartBarIcon,
-      title: "Orientation SOC",
-      description:
-        "Mon ambition professionnelle est de devenir analyste SOC (Security Operations Center), un rôle clé dans la surveillance, la détection et la réponse aux incidents de sécurité, afin de protéger efficacement les systèmes et les données.",
-    },
+  {
+  icon: ChartBarIcon,
+  title: "Orientation Cybersécurité",
+  description:
+    "Mon ambition professionnelle est de construire une carrière dans la cybersécurité en contribuant à la protection des systèmes d'information, des infrastructures et des données. Je souhaite développer continuellement mes compétences afin de répondre aux défis de sécurité auxquels les organisations sont confrontées.",
+},
   ];
 
   return (
@@ -58,22 +58,24 @@ const CyberSecuritySection = () => {
 
         <div className="mt-16 bg-gradient-to-r from-cyan-900/20 to-blue-900/20 rounded-2xl p-8 border border-cyan-800/50">
           <div className="flex flex-col md:flex-row gap-8 items-center">
-            <div className="md:w-2/3">
-              <h3 className="text-2xl font-bold mb-4">Pourquoi le SOC ?</h3>
-              <p className="text-gray-300 mb-4">
-                Le Security Operations Center est le cœur de la défense
-                informatique d’une organisation. En tant qu’analyste SOC, ma
-                mission sera de surveiller en continu les systèmes, d’analyser
-                les alertes de sécurité et de coordonner la réponse aux
-                incidents.
-              </p>
-              <p className="text-gray-300">
-                Ce rôle stratégique requiert des compétences techniques pointues
-                ainsi qu’une forte capacité d’analyse, deux domaines dans
-                lesquels je m’engage à me perfectionner pour apporter une réelle
-                valeur ajoutée.
-              </p>
-            </div>
+           <div className="md:w-2/3">
+  <h3 className="text-2xl font-bold mb-4">
+    Pourquoi la cybersécurité ?
+  </h3>
+  <p className="text-gray-300 mb-4">
+    La cybersécurité est un domaine essentiel qui contribue à protéger les
+    systèmes d'information, les données et les utilisateurs face à des menaces
+    en constante évolution. C'est un secteur dynamique qui demande une veille
+    permanente, de la rigueur et une réelle capacité d'analyse.
+  </p>
+  <p className="text-gray-300">
+    Je souhaite évoluer dans cet univers afin de développer continuellement mes
+    compétences techniques, relever de nouveaux défis et participer à la
+    sécurisation des infrastructures informatiques. Mon objectif est de
+    construire une carrière solide en apportant des solutions concrètes aux
+    enjeux de sécurité des organisations.
+  </p>
+</div>
             <div className="md:w-1/3 flex justify-center">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full blur-2xl opacity-20 animate-pulse"></div>

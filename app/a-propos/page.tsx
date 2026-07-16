@@ -52,28 +52,26 @@ const AboutPage = () => {
   `,
     },
     {
-      date: "3 juin - août 2025 et 22 décembre - 31 janvier",
-      title: "Stage Développeur Web",
-      institution: "A'Numerique",
-      description: `
-    - Développement d’un application de Gestion de facture(Next.js + PostgreSQL), déployé sur Vercel.(formation sur next.js)
-    
-    - Conception et réalisation d’une Plateforme Web d’Agrégation d’Informations (alternances, stages, formations, salons d'emploi, spectacles, événements) destinée à faciliter l’accès à l’information pour les étudiants, chercheurs d’emploi et alternants(projet principal).
-    
-    Objectif du projet :
-    Offrir une plateforme scalable et intuitive pour centraliser et rendre accessibles les informations essentielles sur les formations et événements en France, répondant à un besoin crucial des publics ciblés.
-  `,
-    },
-    {
-      date: "Octobre 2023 – Juin 2024",
-      title: "Technicien Réseaux",
-      institution: "Congo Télécom",
-      description: `
-      • Supervision et maintenance du réseau, gestion du filtrage IP et des pare-feux.
-      • Réduction des incidents liés à la sécurité de 30 % grâce à une surveillance proactive et des interventions ciblées.
-      • Collaboration avec les équipes techniques pour optimiser la performance réseau.
+  date: "Juin – Août 2025 et Décembre 2025 – Février 2026",
+  title: "Stage Développeur Web",
+  institution: "A'Numérique",
+  description: `
+      • Développement d'une fonctionnalité de scraping de données d'offres de stages et d'événements avec Next.js.
+      • Automatisation de la collecte et de la mise à jour des données.
+      • Participation à la conception, aux tests et à la maintenance d'applications web en collaboration avec l'équipe de développement.
     `,
-    },
+},
+    {
+  date: "2023 – 2024",
+  title: "Technicien Réseaux",
+  institution: "Congo Télécom",
+  description: `
+      • Gestion et maintenance d'un parc informatique de plus de 50 postes.
+      • Traitement de plus de 10 incidents utilisateurs par jour (support Niveau 1/2).
+      • Diagnostic des problèmes matériels et réseaux.
+      • Administration des règles de filtrage IP sur pare-feu.
+    `,
+},
     {
       date: "Octobre 2022 – Septembre 2023",
       title: "Développeur Web",
@@ -149,7 +147,7 @@ const AboutPage = () => {
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
                 <div className="flex items-center gap-3">
                   <UserIcon className="h-5 w-5 text-cyan-400" />
-                  <span>21 ans</span>
+                  <span>22 ans</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPinIcon className="h-5 w-5 text-cyan-400" />
