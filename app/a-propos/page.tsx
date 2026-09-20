@@ -59,6 +59,7 @@ const AboutPage = () => {
       • Développement d'une fonctionnalité de scraping de données d'offres de stages et d'événements avec Next.js.
       • Automatisation de la collecte et de la mise à jour des données.
       • Participation à la conception, aux tests et à la maintenance d'applications web en collaboration avec l'équipe de développement.
+      • Participation au support et à l’accompagnement des utilisateurs dans leur environnement numérique.
     `,
 },
     {
